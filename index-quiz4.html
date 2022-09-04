@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>大学生防诈骗</title>
+		<style>
+			
+			body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: url("img/img1/bj.png") center no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;			
+		}
+		
+			.main {
+				/*width:1280px;
+				height:720px;*/
+				justify-content: center;
+				display: flex;
+				align-items: center;
+				position: relative;
+			
+				
+				/*margin: 0 auto;*/
+				
+			}
+			
+		
+		.title {				
+				position:relative; 
+                justify-content: center;
+				cursor: pointer;
+				margin: 0 auto;
+				/*transition:0.5s ease;*/
+			}
+			#a2{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 800px;
+			    height: 500px;
+			    margin: -250px 0 0 -400px;
+			    background-color: rgba(213, 224, 232, 0.68);
+			    border-radius: 20px;
+		 }
+			#p2{
+			    font-size: 24px;
+			    font-family: "仿宋";
+			    font-weight: bold;
+			    color: #030303;
+			    line-height:160%;
+			    top: 50%;
+			    left: 45%;
+			    width: 700px;
+			    height: 550px;
+			    margin: 30px 0px 0 50px;
+
+		         }
+		    #p3{
+		    	    margin-left: 60px;
+
+			font-family: "仿宋";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:580px;
+			border-style:hidden;
+			text-align:left;
+		         }
+		    #tijiao {
+		    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top:50px;}
+				        #cw1 {
+				position: absolute;
+				top: 200px;
+				left: 700px;
+			}
+			
+			#cw2 {
+				position: absolute;
+				top: 250px;
+				left: 700px;
+			}
+			
+			#cw3 {
+				position: absolute;
+				top: 300px;
+				left: 700px;
+			}
+			
+			#zq {
+				position: absolute;
+				top: 350px;
+				left: 700px;
+			}
+		#ts{
+			justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top:0px;
+			font-family: "仿宋";
+			color:#E20407;
+		    font-weight:bold;
+			height: 30px;
+			width: 180px;
+			font-size: 21px;
+			border-radius: 5px;
+			
+			}		 
+		  #m2 img{
+			        position:absolute;
+			        top:405px;
+			        right:25px;
+			  }
+		    #m2 img:hover{
+			transform: scale(1.1);
+			
+			
+				      }
+		    #m3 img{
+			        position:absolute;
+			        top:405px;
+			        left:20px;
+			  }
+		    #m3 img:hover{
+			transform: scale(1.1);
+			
+				      }
+				      .return{
+				position:absolute;
+			        top:220px;
+			        left:-200px;
+			}
+     </style>
+<script type="text/javascript">
+function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("cw1").style.display = "block";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "block";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer4") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "block";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer3") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "block";
+				}
+			}
+    	</script>
+	</head>
+	<body>
+		<div class="main">
+			<img class="title" src="img/img4-quiz/title2.png" />			
+		</div>
+		<div id="a2">
+ 
+		<form action="" method="post" name="myform" id="myform">
+					<div id="p2">【4/8】假如你收到短信，对方自称其是公安民警，说你的银行账号与一宗洗黑钱案件有关，需要冻结银行账号，现在要求你配合调查，需要将银行卡的钱打入指定账号，等调查结束之后才能将钱还给你，你该怎么办？
+					<p id="p3"><input type="radio" value="answer1" name="answer" />A. 打电话联系对方</p>
+					<p id="p3"><input type="radio" value="answer2" name="answer" />B. 将钱打入对方指定的账号</p>
+					<p id="p3"><input type="radio" value="answer3" name="answer" />C. 配合对方调查</p>
+					<p id="p3"><input type="radio" value="answer4" name="answer" />D. 挂掉对方电话，然后报警，寻求警察帮助</p>
+			
+			
+					<input id="tijiao" type="button" value="提交" name="submit" onClick="myFunction()" id="check">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw1" style="display:none">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw2" style="display:none">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw3" style="display:none">
+					<img src="img/img4-quiz/right.png" width="60px" height="50px" id="zq" style="display:none">
+					<div id="ts" style="display:none">你还没有选择哦！</div>
+					
+				</form>
+		<div id="m2">
+		<a href="index-quiz5.html"><img src="img/img4-quiz/next.png"></a>
+		</div>
+		<div id="m3">
+		<a href="index-quiz3.html"><img src="img/img4-quiz/last.png" ></a>
+		
+      </div>
+       <a href="index.html"><div class="return"><img src="img/img4-quiz/return.png"></div></a>
+    </div>
+	</body>
+</html>

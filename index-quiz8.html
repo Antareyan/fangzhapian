@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>大学生防诈骗</title>
+		<style>
+			
+			body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: url("img/img1/bj.png") center no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;			
+		}
+		
+			.main {
+				/*width:1280px;
+				height:720px;*/
+				justify-content: center;
+				display: flex;
+				align-items: center;
+				position: relative;
+			
+				
+				/*margin: 0 auto;*/
+				
+			}
+			
+		
+		.title {				
+				position:relative; 
+                justify-content: center;
+				cursor: pointer;
+				margin: 0 auto;
+				/*transition:0.5s ease;*/
+			}
+			#a2{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 800px;
+			    height: 500px;
+			    margin: -250px 0 0 -400px;
+			    background-color: rgba(213, 224, 232, 0.68);
+			    border-radius: 20px;
+		 }
+			#p2{
+			    font-size: 24px;
+			    font-family: "仿宋";
+			    font-weight: bold;
+			    color: #030303;
+			    line-height:160%;
+			    top: 50%;
+			    left: 45%;
+			    width: 700px;
+			    height: 550px;
+			    margin: 30px 0px 0 50px;
+
+		         }
+		    #p3{
+		    	    margin-left: 60px;
+
+			font-family: "仿宋";
+			color: #030303;
+			font-size: 20px;
+			background-color:#f6dcc6ed;
+			border-radius:5px;
+			height:30px;
+			width:580px;
+			border-style:hidden;
+			text-align:left;
+		         }
+		    #tijiao {
+		    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top:50px;}
+				        #cw1 {
+				position: absolute;
+				top: 160px;
+				left: 700px;
+			}
+			
+			#cw2 {
+				position: absolute;
+				top: 210px;
+				left: 700px;
+			}
+			
+			#cw3 {
+				position: absolute;
+				top: 260px;
+				left: 700px;
+			}
+			
+			#zq {
+				position: absolute;
+				top: 310px;
+				left: 700px;
+			}
+		#ts{
+			justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top:0px;
+			font-family: "仿宋";
+			color:#E20407;
+		    font-weight:bold;
+			height: 30px;
+			width: 180px;
+			font-size: 21px;
+			border-radius: 5px;
+			
+			}		 
+		  #m2 img{
+			        position:absolute;
+			        top:405px;
+			        right:25px;
+			  }
+		    #m2 img:hover{
+			transform: scale(1.1);
+			
+			
+				      }
+		    #m3 img{
+			        position:absolute;
+			        top:405px;
+			        left:20px;
+			  }
+		    #m3 img:hover{
+			transform: scale(1.1);
+			
+				      }
+				      .return{
+				position:absolute;
+			        top:220px;
+			        left:-200px;
+			}
+			.enter{
+				position:absolute;
+			        top:200px;
+			        right:-225px;
+			}
+     </style>
+<script type="text/javascript">
+function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("cw1").style.display = "block";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "block";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer4") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "block";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer3") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "block";
+				}
+			}
+    	</script>
+	</head>
+	<body>
+		<div class="main">
+			<img class="title" src="img/img4-quiz/title2.png" />			
+		</div>
+		<div id="a2">
+ 
+		<form action="" method="post" name="myform" id="myform">
+					<div id="p2">【8/8】假如你的游戏好友要加你为QQ好友，并告诉你现在有个“扫码转账返利”活动，充值300元可返利500元，充值700元可返利1000元，你会怎么做？
+					<p id="p3"><input type="radio" value="answer1" name="answer" />A. 这么划算，赶紧充值后可以购买更多游戏装备和皮肤</p>
+					<p id="p3"><input type="radio" value="answer2" name="answer" />B. 立即和喜欢玩游戏的同学分享这么好的事情</p>
+					<p id="p3"><input type="radio" value="answer3" name="answer" />C. 持怀疑态度，先充300元试试</p>
+					<p id="p3"><input type="radio" value="answer4" name="answer" />D. 立马删除“好友”</p>
+			
+			
+					<input id="tijiao" type="button" value="提交" name="submit" onClick="myFunction()" id="check">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw1" style="display:none">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw2" style="display:none">
+					<img src="img/img4-quiz/wrong.png" width="60px" height="45px" id="cw3" style="display:none">
+					<img src="img/img4-quiz/right.png" width="60px" height="50px" id="zq" style="display:none">
+					<div id="ts" style="display:none">你还没有选择哦！</div>
+					
+				</form>
+		
+		<div id="m3">
+		<a href="index-quiz7.html"><img src="img/img4-quiz/last.png" ></a>
+		
+      </div>
+      <a href="index.html"><div class="return"><img src="img/img4-quiz/return.png"></div></a>
+       <a href="index-last.html"><div class="enter"><img src="img/img1/enterlast.png"></div></a>
+    </div>
+	</body>
+</html>

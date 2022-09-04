@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>大学生防诈骗</title>
+		<style>
+			
+			body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: url("img/img1/bj.png") center no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;			
+		}
+		
+			.main {
+				/*width:1280px;
+				height:720px;*/
+				justify-content: center;
+				display: flex;
+				align-items: center;
+				position: relative;
+			
+				
+				/*margin: 0 auto;*/
+				animation: action1 1s linear ;
+			}
+			
+		@keyframes action1{
+			0%{opacity:0.1}
+			25%{opacity: 0.3}
+			50%{opacity: 0.5}
+			75%{opacity: 0.8}
+			100%{opacity:1}
+		}
+			
+			/*.background1 div {
+				position: relative;
+			}*/
+			
+				.title {				
+				position:relative; 
+                justify-content: center;
+				cursor: pointer;
+				margin: 0 auto;
+				/*transition:0.5s ease;*/
+			}
+			
+			.forbid{
+				position:absolute; 
+				left: 780px;
+				top:0px;
+				animation: action2 1.2s linear ;
+			}
+			@keyframes action2{
+			0%{top:0px}
+			15%{top:60px}
+			25%{top:100px}
+			33%{top:120px}
+			40%{top:85px}
+			50%{top:20px}
+			65%{top:50px}
+			72%{top:60px}
+			80%{top:70px}
+			90%{top:55px}
+			100%{top:40px}
+		}
+		
+			.entercase {
+				position:absolute; 
+				left:655px;
+				top:226px;
+				cursor: pointer;
+				transition: 0.5s ease;
+			}
+			
+			.enterknow {
+				position:absolute; 
+				left:505px; 
+				top:425px;
+				cursor: pointer;
+				transition: 0.5s ease;		
+			}
+
+			.enterquiz{
+				position:absolute; 		
+				cursor: pointer;
+				left:560px; 
+				top:620px;
+				transition: 0.5s ease;	
+			}
+			
+			.pic1 {
+				position:absolute; 
+				left:25px;
+				top:200px;
+				cursor: pointer;
+				
+			}
+		
+			
+			
+	
+			img.entercase:hover{
+            	transform: scale(1.1);
+        	}
+        	img.enterknow:hover{
+            	transform: scale(1.1);
+        	}
+			img.enterquiz:hover{
+			    transform: scale(1.1);
+			}
+        	*/
+		</style>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript">
+		
+	
+		
+
+    	</script>
+	</head>
+	<body>
+		<div class="main">
+			
+				<img class="title" src="img/img1/title.png" />
+				<img class="forbid" src="img/img1/forbid.png"  />
+				
+			
+			
+				<img class="pic1" src="img/img1/pic1.png"/>
+				
+		
+	
+			
+				<a href="index-case.html"><img class="entercase" src="img/img1/entercase.png"/></a>
+				<a href="index-youxi.html"><img class="enterknow" src="img/img1/enterknow.png"/></a>	
+				<a href="index-quiz.html"><img class="enterquiz" src="img/img1/enterquiz.png"/></a>
+		
+			
+			
+		</div>
+	</body>
+</html>
